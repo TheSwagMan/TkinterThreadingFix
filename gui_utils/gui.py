@@ -7,9 +7,3 @@ class Gui(tk.Tk):
         """
         If you need to put a GUI layout here.
         """
-        self.bind("<<close>>", self.close)
-        self.protocol("WM_DELETE_WINDOW", self.close)
-
-    def close(self, *args):
-        print("ok")
-        self.destroy()
