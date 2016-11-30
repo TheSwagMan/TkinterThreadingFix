@@ -1,6 +1,5 @@
 from threading import Thread
 
-
 class GuiAdapter(Thread):
     def __init__(self, window):
         super().__init__()

@@ -1,10 +1,11 @@
-from gui import Gui
-from adaptor import GuiAdapter
+from utils.adaptor import GuiAdapter
+
+from utils.gui import Gui
 
 if __name__ == "__main__":
     # creating Tk
     maingui = Gui()
-    # passing Tk to GuiAdapter
+    # passing Canvas to GuiAdapter
     adapter = GuiAdapter(maingui)
     # starting adaptor in another thread
     adapter.start()
